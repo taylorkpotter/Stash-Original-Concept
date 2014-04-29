@@ -15,7 +15,7 @@
 @interface TPIconSelectionViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (weak, nonatomic)  TPAddIdeaViewController *addIdeaViewController;
+@property (strong, nonatomic)  TPAddIdeaViewController *addIdeaViewController;
 @property (strong, nonatomic) UIImage *selectedIcon;
 
 
@@ -27,6 +27,7 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+//  self.addIdeaViewController = [TPAddIdeaViewController new];
 }
 
 - (IBAction)doneSelectingIcon:(id)sender {
