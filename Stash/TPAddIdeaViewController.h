@@ -12,7 +12,6 @@
 
 @interface TPAddIdeaViewController : UIViewController
 @property (nonatomic, weak) TPModelController *modelController;
-//@property (strong, nonatomic) UIImageView *savedIcon;
 @property (weak, nonatomic) IBOutlet UIImageView *icon;
 
 

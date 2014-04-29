@@ -19,6 +19,7 @@
 
 @property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) TPModelController *modelController;
+@property (nonatomic, weak) TPCollectionViewCell *cell;
 @end
 
 
@@ -38,15 +39,16 @@
   // Singleton that saves 450 png icons to disk for fast loading (in .pch)
   [[TPIconLibrary sharedLibrary]loadIcons];
 
+
 }
 
--(void)viewWillAppear:(BOOL)animated
+-(void)viewDidAppear:(BOOL)animated
 {
-  [super viewWillAppear:animated];
+  [super viewDidAppear:animated];
   
   // Reload collection view to see icons that were just added
   [self.collectionView reloadData];
-  
+
 }
 #pragma mark - Browse Item Button
 
@@ -74,12 +76,15 @@
 {
   
   TPCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
-  TPIdea *idea = [self.modelController.ideas objectAtIndex:[[[self.collectionView indexPathsForSelectedItems] lastObject] row]];
+  TPIdea *idea = [_modelController.ideas objectAtIndex:indexPath.row];
+//  TPIdea *idea = [self.modelController.ideas objectAtIndex:[[[self.collectionView indexPathsForSelectedItems] lastObject] row]];
   
   cell.iconImage.image = idea.appIcon;
+  NSLog(@"%@", cell.iconImage.image);
   
   
   return cell;
+
 }
 
 #pragma mark - Add Idea / Browse Idea Segue
@@ -97,6 +102,8 @@
     detailVC.selectedIdea = selectedIdea;
   }
 }
+
+
 
 
 

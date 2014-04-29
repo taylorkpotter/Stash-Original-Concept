@@ -15,8 +15,6 @@
 @interface TPIconSelectionViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (strong, nonatomic)  TPAddIdeaViewController *addIdeaViewController;
-@property (strong, nonatomic) UIImage *selectedIcon;
 
 
 @end
@@ -27,19 +25,7 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-//  self.addIdeaViewController = [TPAddIdeaViewController new];
 }
-
-- (IBAction)doneSelectingIcon:(id)sender {
-  [self dismissViewControllerAnimated:YES completion:^{
-  
-    self.addIdeaViewController.icon.image = self.selectedIcon;
-    NSLog(@"%@", self.addIdeaViewController.icon.image);
-
-    
-  }];
-}
-
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -67,8 +53,6 @@
   cell.backgroundColor = [UIColor lightGrayColor];
     self.selectedIcon = cell.iconImage.image;
     NSLog(@"%@", self.selectedIcon);
-
-  
 }
 
 @end

@@ -12,6 +12,6 @@
 
 @interface TPIconSelectionViewController : UIViewController
 
-
+@property (strong, nonatomic) UIImage *selectedIcon;
 
 @end

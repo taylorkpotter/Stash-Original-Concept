@@ -479,6 +479,8 @@
 		D75B32CF190ED76F003B82C0 /* TPIdea.m in Sources */ = {isa = PBXBuildFile; fileRef = D75B32CE190ED76F003B82C0 /* TPIdea.m */; };
 		D75B32D5190EDBA4003B82C0 /* TPModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = D75B32D4190EDBA4003B82C0 /* TPModelController.m */; };
 		D75B32D8190EDD61003B82C0 /* TPAddIdeaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D75B32D7190EDD61003B82C0 /* TPAddIdeaViewController.m */; };
+		D76AE91519104AB600F45275 /* Bottom half.png in Resources */ = {isa = PBXBuildFile; fileRef = D76AE91419104AB600F45275 /* Bottom half.png */; };
+		D76AE91719104E2400F45275 /* Bottom half2.png in Resources */ = {isa = PBXBuildFile; fileRef = D76AE91619104E2400F45275 /* Bottom half2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -977,6 +979,8 @@
 		D75B32D4190EDBA4003B82C0 /* TPModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPModelController.m; sourceTree = "<group>"; };
 		D75B32D6190EDD61003B82C0 /* TPAddIdeaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPAddIdeaViewController.h; sourceTree = "<group>"; };
 		D75B32D7190EDD61003B82C0 /* TPAddIdeaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPAddIdeaViewController.m; sourceTree = "<group>"; };
+		D76AE91419104AB600F45275 /* Bottom half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bottom half.png"; sourceTree = "<group>"; };
+		D76AE91619104E2400F45275 /* Bottom half2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bottom half2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1546,6 +1550,8 @@
 		D75B329B190ECC17003B82C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D76AE91619104E2400F45275 /* Bottom half2.png */,
+				D76AE91419104AB600F45275 /* Bottom half.png */,
 				D754357F190F34FC00B1D162 /* HiRes */,
 				D75B329C190ECC17003B82C0 /* Stash-Info.plist */,
 				D75B329D190ECC17003B82C0 /* InfoPlist.strings */,
@@ -1927,6 +1933,7 @@
 				D75438C2190F34FD00B1D162 /* icon_445.png in Resources */,
 				D75438DA190F34FD00B1D162 /* icon_61.png in Resources */,
 				D754387E190F34FD00B1D162 /* icon_384.png in Resources */,
+				D76AE91519104AB600F45275 /* Bottom half.png in Resources */,
 				D7543755190F34FD00B1D162 /* icon_116.png in Resources */,
 				D7543815190F34FD00B1D162 /* icon_29.png in Resources */,
 				D7543897190F34FD00B1D162 /* icon_406.png in Resources */,
@@ -2104,6 +2111,7 @@
 				D754383A190F34FD00B1D162 /* icon_322.png in Resources */,
 				D754375F190F34FD00B1D162 /* icon_125.png in Resources */,
 				D7543764190F34FD00B1D162 /* icon_13.png in Resources */,
+				D76AE91719104E2400F45275 /* Bottom half2.png in Resources */,
 				D7543783190F34FD00B1D162 /* icon_158.png in Resources */,
 				D75437B1190F34FD00B1D162 /* icon_2.png in Resources */,
 				D754376F190F34FD00B1D162 /* icon_14.png in Resources */,
